@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: nacos-config-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        file-extension: yaml
+        server-addr: localhost:8848
+        group: PROD_GROUP
+        namespace: Prod_Namespace
+# nacos-config-client-dev.yaml

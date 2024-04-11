@@ -1,0 +1,16 @@
+server:
+  port: 83
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  application:
+    name: nacos-order-consumer
+service-url:
+  nacos-user-service: Http://nacos-payment-provider
+feign:
+  sentinel:
+    enabled: true
+
+
